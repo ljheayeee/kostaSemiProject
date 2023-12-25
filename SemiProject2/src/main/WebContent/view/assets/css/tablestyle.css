@@ -1,0 +1,114 @@
+table {
+  background: linear-gradient(45deg, #49a09d, #5f2c82);
+
+  width: 755px;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+}
+
+
+
+thead {
+  th{
+    background-color: #55608f;
+  }
+} 
+ 
+tbody {
+  tr{
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+  td {
+    position: relative;
+    &:hover {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -9999px;
+        bottom: -9999px;
+        background-color: rgba(255,255,255,0.2);
+        z-index: -1;
+      }
+    }
+  }
+}
+th {
+    text-align: left;
+    border-bottom: 1px black;
+  }
+
+
+  .labelHover{
+    color: #00bdfe;
+    background-color: #fff;
+    height: 75px;
+    border-radius: 15%;
+    width: 100px;
+
+}
+.labelHover:hover{
+    background-color: #00bdfe;
+    color: #fff;
+    height: 75px;
+    border-radius: 30%;
+    border-radius: 15%;
+}
+.weatherReportDiv{
+display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.weatherReport input {
+ font-size: 14px;
+    padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #00bdfe;
+  background-color: #fff;
+  border: 1px solid #00bdfe;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+}
+
+.weatherReport input:hover
+ {
+  background-color: #00bdfe;
+  color: #fff;
+   font-size: 14px;
+    padding: 10px 20px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 15px;
+  border: 1px solid #00bdfe;
+  padding: 10px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+}
+.table1{
+	display:none;
+}
